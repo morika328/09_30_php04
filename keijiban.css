@@ -1,0 +1,17 @@
+body{
+    background: url(./img/back.jpg);
+    width: 1500px;
+}
+
+fieldset{
+    background-color: white;
+    width: 1200px;
+    align-items: center;
+    margin-left: auto;
+margin-right: auto;
+}
+
+legend{
+    text-align: center;
+    font-size: 30px;
+}
