@@ -1,8 +1,5 @@
 <?php
 // 送信データのチェック
-// var_dump($_GET);
-// exit();
-
 session_start(); // セッションの開始
 include('functions.php'); // 関数ファイル読み込み
 check_session_id(); // idチェック関数の実行
@@ -11,9 +8,9 @@ check_session_id(); // idチェック関数の実行
 // include("functions.php");
 
 $article_id = $_GET["article_id"];
-
 $pdo = connect_to_db();
-
+// var_dump($article_id);
+// exit();
 // データ取得SQL作成
 $sql = 'SELECT * FROM articledb_table WHERE article_id=:article_id';
 
@@ -33,19 +30,16 @@ if ($status == false) {
   // fetch()関数でSQLで取得したレコードを取得できる
   $record = $stmt->fetch(PDO::FETCH_ASSOC);
 }
-
 ?>
 
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href=" keijiban.css ">
   <title>今日のできごと掲示板</title>
 </head>
-
 <body>
   <form action="update.php" method="POST">
     <fieldset>

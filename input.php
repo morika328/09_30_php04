@@ -14,7 +14,7 @@ session_start(); // セッションの開始
 include('functions.php'); // 関数ファイル読み込み
 check_session_id(); // idチェック関数の実行
 ?>
-s
+
 <body>
   <form action="create.php" method="POST">
     <fieldset>

@@ -27,7 +27,8 @@ exit();
 $_SESSION = array(); // セッション変数を空にする
 $_SESSION["session_id"] = session_id();
 $_SESSION["is_admin"] = $val["is_admin"];
-$_SESSION["name"] = $val["name"];
+$_SESSION["mail"] = $val["mail"];
+$_SESSION["login_id"] = $val["login_id"];
 header("Location:read.php"); // 一覧ページへ移動
 exit();
 }

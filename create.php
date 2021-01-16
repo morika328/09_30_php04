@@ -1,6 +1,8 @@
 <?php
-include("functions.php");
 
+session_start(); // セッションの開始
+include('functions.php'); // 関数ファイル読み込み
+check_session_id(); // idチェック関数の実行
 // 送信確認
 // var_dump($_POST);
 // exit();
@@ -45,6 +47,4 @@ if ($status == false) {
   exit();
 }
 
-session_start(); // セッションの開始
-include('functions.php'); // 関数ファイル読み込み
-check_session_id(); // idチェック関数の実行
+

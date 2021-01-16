@@ -32,8 +32,8 @@ if ($status == false) {
     $output .= "<td>{$record["name"]}</td>";
     $output .= "<td>{$record["article"]}</td>";
     // edit deleteリンクを追加
-    $output .= "<td><a href='edit.php?id={$record["article_id"]}'>edit</a></td>";
-    $output .= "<td><a href='delete.php?id={$record["article_id"]}'>delete</a></td>";
+    $output .= "<td><a href='edit.php?article_id={$record["article_id"]}'>edit</a></td>";
+    $output .= "<td><a href='delete.php?article_id={$record["article_id"]}'>delete</a></td>";
     $output .= "</tr>";
   }
   // $valueの参照を解除する．解除しないと，再度foreachした場合に最初からループしない

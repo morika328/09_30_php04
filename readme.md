@@ -4,8 +4,4 @@
 ログイン情報のデータベースと、記事のデータベースを分けましたが、紐づけできておりません。
 
 ・苦戦した点、ハマった点、共有したい解決方法
-edit、deleteがエラーになってしまいます。
-
-Warning: Undefined array key "article_id" in C:\xampp\htdocs\kadai09\edit.php on line 13
-
-article_idがうまく引っ張れていない？
+権限によってメニューなどの画面を変える実装ができませんでした。
